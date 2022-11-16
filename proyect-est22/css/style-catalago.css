@@ -56,3 +56,13 @@ h1{
 .text2 {
     color: #a5aec0
 }
+
+form{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.margenes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
