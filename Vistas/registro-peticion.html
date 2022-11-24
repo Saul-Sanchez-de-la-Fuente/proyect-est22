@@ -86,6 +86,60 @@
         </center>
     </div>
     <br>
+    <form action="registro-ciudadano.html" method="POST">
+        @csrf
+        <div class="container border">
+            <h2>Datos de la Petición</h2>
+            <div class="margenes">
+                <div class="row">
+                    <div class="col-sm-5 col-md-4">
+                        <label for="" class="form-label">Nombre de la dependencia</label>
+                        <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccionar dependencia</option>
+                            <option value="gobierno-estatal">Gobierno Estatal</option>
+                            <option value="secretaria-deportes">Secretaría de deportes</option>
+                            <option value="secretaria-finanzas">Secretaría de finanzas</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        <label for="" class="form-label">Tipo de apoyo</label>
+                        <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccionar apoyo</option>
+                            <option value="monetario">Monetario</option>
+                            <option value="especie">Especie</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        <label for="" class="form-label">Fecha de Petición</label>
+                        <input id="fecha-peticion" name="fecha-peticion" type="date" class="form-control" disabled>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-5 col-md-12">
+                        <label for="">Descripción de la Petición:</label>
+                        <textarea id="descripcion" name="descripcion" class="form-control" rows="5" cols="33" disabled>El motivo...</textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-5 col-md-12">
+                        <label for="" class="form-label">Archivos Adjuntos</label>
+                        <input id="archivos-peticion" name="archivos-peticion" type="file" class="form-control" accept=".jpg, .jpeg, .png, .pdf" multiple disabled>
+                    </div>
+                </div>
+                <br>
+                
+            </div>
+        </div>
+        <br>
+            <div class="mb-3">
+                <center>
+                    <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Añadir Bitacora</a>
+                </center>
+            </div>
+    </form>
+    <br>
         <div class="container">
             <a class="btn" style="background-color: #ab0033; color: white;" href="registro-ciudadano.html" role="button">Registrar Ciudadano</a>
             <br><br>
