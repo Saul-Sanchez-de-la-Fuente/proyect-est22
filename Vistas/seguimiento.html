@@ -73,85 +73,96 @@
     </nav>
 
     <div class="container">
-        <!-- Contenido de la Vista -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item">Usuarios</li>
-                <li class="breadcrumb-item active" aria-current="page">Roles</li>
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Seguimiento</li>
             </ol>
         </nav>
-        <center><h1>ROLES</h1></center>
+        <h1><center>SEGUIMIENTO</h1></center>
         <br>
         <nav class="navbar bg-light">
             <div class="container-fluid">
-            <a class="navbar-brand">Busqueda de Roles</a>
-            <form class="d-flex" role="search">
+              <a class="navbar-brand">Busqueda de ciudadano</a>
+              <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn" style="background-color: #ab0033; color: white;" type="submit">Search</button>
-            </form>
+              </form>
             </div>
-        </nav>
+          </nav>
         <br>
-        <a class="btn" style="background-color: #ab0033; color: white;" href="registro-rol.html" role="button">Agregar nuevo rol</a>
-        <br><br>
-        <h2>Roles registrados</h2>
+        <br>
+        <h2>Peticiones del ciudadano</h2>
         <div class="table-responsive">
             <table class="table table-striped border" style="text-align: center;">
                 <thead style="background-color: #ab0033;" class="text-white">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nombre del rol</th>
-                        <th scope="col">Permisos</th>
-                        <th scope="col">Acciones</th>
+                        <th scope="col">Nom. ciudadano</th>
+                        <th scope="col">Tipo de apoyo</th>
+                        <th scope="col">Dependencia</th>
+                        <th scope="col">Estado de petición</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Rol 1</td>
-                        <td>Turnar, Escribir bitacoras, Subir archivos, Capturar</td>
+                        <td>Nombre ciudadano 1</td>
+                        <td>Tipo apoyo</td>
+                        <td>Dependencia 1</td>
+                        <td>Aprobada</td>
                         <td>
                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="editar-rol.html" class="btn">Editar</a>
-                                <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
+                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
+                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Rol 2</td>
-                        <td>Turnar, Escribir bitacoras, Subir archivos, Capturar</td>
+                        <td>Nombre ciudadano 1</td>
+                        <td>Tipo apoyo</td>
+                        <td>Dependencia 1</td>
+                        <td>En revisión</td>
                         <td>
                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="editar-rol.html" class="btn">Editar</a>
-                                <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
+                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
+                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td>Rol 3</td>
-                        <td>Turnar, Escribir bitacoras, Subir archivos, Capturar</td>
+                        <td>Nombre ciudadano 1</td>
+                        <td>Tipo apoyo</td>
+                        <td>Dependencia 2</td>
+                        <td>Rechazada</td>
                         <td>
                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="editar-rol.html" class="btn">Editar</a>
-                                <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
+                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
+                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
-                        <td>Rol 4</td>
-                        <td>Turnar, Escribir bitacoras, Subir archivos, Capturar</td>
+                        <td>Nombre ciudadano 1</td>
+                        <td>Tipo apoyo</td>
+                        <td>Dependencia 2</td>
+                        <td>En revisión</td>
                         <td>
                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="editar-rol.html" class="btn">Editar</a>
-                                <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
+                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
+                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
                             </ul>
                         </td>
                     </tr>

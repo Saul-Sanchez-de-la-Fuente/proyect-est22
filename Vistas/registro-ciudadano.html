@@ -76,13 +76,13 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item">Usuarios</li>
-                <li class="breadcrumb-item active" aria-current="page">Registrar nuevo usuarios</li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item">Registro</li>
+              <li class="breadcrumb-item active" aria-current="page">Registrar Ciudadano</li>
             </ol>
           </nav>
         <center>
-            <h1>REGISTRAR USUARIO</h1>
+            <h1>REGISTRAR CIUDADANO</h1>
         </center>
     </div>
     <br>
@@ -93,23 +93,12 @@
                 <h2>Datos del Ciudadano</h2>
                 <div class="margenes">
                     <div class="row">
+                        
                         <div class="col-sm-5 col-md-6">
-                            <label for="" class="form-label">Dependencia</label>
-                            <select class="form-select" aria-label="Default select example" required>
-                                <option selected>Seleccione una dependencia</option>
-                                <option value="1">Dependencia 1</option>
-                                <option value="2">Dependencia 2</option>
-                                <option value="3">Dependencia 3</option>
-                            </select>
+                            <label for="" class="form-label">CURP</label>
+                            <input id="curp" name="curp"type="text" class="form-control" required>
                         </div>
-                        <div class="col-sm-5 col-md-6">
-                            <label for="" class="form-label">Rol</label>
-                            <select class="form-select" aria-label="Default select example" required>
-                                <option selected>Seleccione un rol para el usuario</option>
-                                <option value="1">Administrador General</option>
-                                <option value="2">Administrador Dependencia</option>
-                                <option value="3">Capturador</option>
-                            </select>
+                        <div class="col-sm-5 col-md-3">
                         </div>
                     </div>
                     <br>
@@ -132,7 +121,7 @@
                     <div class="row">
                         <div class="col-sm-5 col-md-6">
                             <label for="" class="form-label">Número de télefono</label>
-                            <input id="num-telefono" name="clave-ine" type="text" class="form-control"  required>
+                            <input id="telefono" name="telefono" type="number" class="form-control"  required>
                         </div>
                         <div class="col-sm-5 col-md-6">
                             <label for="" class="form-label">Correo electrónico</label>
@@ -142,7 +131,7 @@
                     <br>
                     <div class="mb-3">
                         <center>
-                        <a href="registrar-usuario.html" class="btn" style="background-color:  #bc955c; color: white;">Cancelar</a>
+                        <a href="index.html" class="btn" style="background-color:  #bc955c; color: white;">Cancelar</a>
                         <button style="background-color:  #ab0033; color: white;" type="submit" class="btn">Guardar</button>
                         </center>
                     </div>
