@@ -63,22 +63,22 @@ form{
 }
 
 
-  .navbar .nav-item:not(:last-child) {
-    margin-right: 20px;
-  }
+.navbar .nav-item:not(:last-child) {
+  margin-right: 20px;
+}
 
-  .dropdown:hover>.dropdown-menu{
-    display: block;
-  }
+.dropdown:hover>.dropdown-menu{
+  display: block;
+}
   
-  .dropdown-toggle::after {
-     transition: transform 0.15s linear; 
-  }
+.dropdown-toggle::after {
+  transition: transform 0.15s linear; 
+}
   
-  .show.dropdown .dropdown-toggle::after {
-    transform: translateY(3px);
-  }
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
   
-  .dropdown-menu {
+.dropdown-menu {
     margin-top: 0;
-  }
+}
