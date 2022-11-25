@@ -49,9 +49,6 @@
                         </ul>
                 </li>
                 <li class="nav-item">
-                    <a style="color: white;" class="nav-link  ms-3" aria-current="page" href="seguimiento.html">Seguimiento</a>
-                </li>
-                <li class="nav-item">
                     <a style="color: white;" class="nav-link  ms-3" aria-current="page" href="reportes.html">Reportes</a>
                 </li>
                 <li class="nav-item">
@@ -73,7 +70,7 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+
             <!-- Contenido de la Vista -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -82,11 +79,94 @@
                   <li class="breadcrumb-item active" aria-current="page">Registrar Usuarios</li>
                 </ol>
               </nav>
-            <center>
-                <h1>REGISTRAR USUARIO</h1>
-            </center>
+            <center><h1>REGISTRAR USUARIO</h1></center>
+            <br>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand">Busqueda de Usuarios</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" style="background-color: #ab0033; color: white;" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+            <br>
+            <a class="btn" style="background-color: #ab0033; color: white;" href="registrar-usuario-nuevo.html" role="button">Registrar Usuario</a>
+            <br><br>
+            <h2>Usuarios registrados</h2>
+            <div class="table-responsive">
+                <table class="table table-striped border" style="text-align: center;">
+                    <thead style="background-color: #ab0033;" class="text-white">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom. de Usuario</th>
+                            <th scope="col">Dependencia</th>
+                            <th scope="col">Contacto</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Nombre usuario 1</td>
+                            <td>Dependencia 1</td>
+                            <td>correoejemplo@gmail.com</td>
+                            <td>Administrador General</td>
+                            <td>
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu">
+                                    <a style="background-color:  #bc955c; color: white;" href="editar-usuario.html" class="btn">Editar</a>
+                                    <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Nombre usuario 2</td>
+                            <td>Dependencia 2</td>
+                            <td>correoejemplo@gmail.com</td>
+                            <td>Capturador</td>
+                            <td>
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu">
+                                    <a style="background-color:  #bc955c; color: white;" href="editar-usuario.html" class="btn">Editar</a>
+                                    <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Nombre usuario 3</td>
+                            <td>Dependencia 3</td>
+                            <td>correoejemplo@gmail.com</td>
+                            <td>Administrador Dependencia</td>
+                            <td>
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu">
+                                    <a style="background-color:  #bc955c; color: white;" href="editar-usuario.html" class="btn">Editar</a>
+                                    <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Nombre usuario 4</td>
+                            <td>Dependencia 4</td>
+                            <td>correoejemplo@gmail.com</td>
+                            <td>Capturador</td>
+                            <td>
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu">
+                                    <a style="background-color:  #bc955c; color: white;" href="editar-usuario.html" class="btn">Editar</a>
+                                    <a class="btn btn-secondary" style="background-color: #ab0033; color: white;" href="#" role="button">Eliminar</a>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        </div>
     </div>
 
     

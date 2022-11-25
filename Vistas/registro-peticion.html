@@ -49,9 +49,6 @@
                         </ul>
                 </li>
                 <li class="nav-item">
-                    <a style="color: white;" class="nav-link  ms-3" aria-current="page" href="seguimiento.html">Seguimiento</a>
-                </li>
-                <li class="nav-item">
                     <a style="color: white;" class="nav-link  ms-3" aria-current="page" href="reportes.html">Reportes</a>
                 </li>
                 <li class="nav-item">
@@ -92,18 +89,48 @@
             <h2>Datos de la Petición</h2>
             <div class="margenes">
                 <div class="row">
-                    <div class="col-sm-5 col-md-4">
-                        <label for="" class="form-label">Nombre de la dependencia</label>
-                        <select class="form-select" aria-label="Default select example" disabled>
-                            <option selected>Seleccionar dependencia</option>
-                            <option value="gobierno-estatal">Gobierno Estatal</option>
-                            <option value="secretaria-deportes">Secretaría de deportes</option>
-                            <option value="secretaria-finanzas">Secretaría de finanzas</option>
-                          </select>
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">CURP</label>
+                        <input id="curp" name="curp"type="text" class="form-control" required>
                     </div>
+                    <div class="col-sm-5 col-md-3">
+                        <a style="background-color:  #ab0033; color: white; margin-top: 32px;" href="#" class="btn">Buscar ciudadano</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">Clave INE</label>
+                        <input id="clave-ine" name="clave-ine" type="text" class="form-control"  required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-md-3">
+                        <label for="" class="form-label">Apellido Paterno</label>
+                        <input id="apellido-paterno" name="apellido-paterno" type="text" class="form-control"  placeholder="" required>
+                    </div>
+                    <div class="col-sm-5 col-md-3">
+                        <label for="" class="form-label">Apellido Materno</label>
+                        <input id="apellido-materno" name="apellido-materno" type="text" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">Nombres</label>
+                        <input id="nombres" name="nombres" type="text" class="form-control"  required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">Estado</label>
+                        <input id="estado" name="estado" type="text" class="form-control" required>
+                    </div>
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">Municipio</label>
+                        <input id="municipio" name="municipio" type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-5 col-md-4">
                         <label for="" class="form-label">Tipo de apoyo</label>
-                        <select class="form-select" aria-label="Default select example" disabled>
+                        <select class="form-select" aria-label="Default select example">
                             <option selected>Seleccionar apoyo</option>
                             <option value="monetario">Monetario</option>
                             <option value="especie">Especie</option>
@@ -111,21 +138,21 @@
                     </div>
                     <div class="col-sm-5 col-md-4">
                         <label for="" class="form-label">Fecha de Petición</label>
-                        <input id="fecha-peticion" name="fecha-peticion" type="date" class="form-control" disabled>
+                        <input id="fecha-peticion" name="fecha-peticion" type="date" class="form-control">
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-sm-5 col-md-12">
                         <label for="">Descripción de la Petición:</label>
-                        <textarea id="descripcion" name="descripcion" class="form-control" rows="5" cols="33" disabled>El motivo...</textarea>
+                        <textarea id="descripcion" name="descripcion" class="form-control" rows="5" cols="33">El motivo...</textarea>
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-sm-5 col-md-12">
                         <label for="" class="form-label">Archivos Adjuntos</label>
-                        <input id="archivos-peticion" name="archivos-peticion" type="file" class="form-control" accept=".jpg, .jpeg, .png, .pdf" multiple disabled>
+                        <input id="archivos-peticion" name="archivos-peticion" type="file" class="form-control" accept=".jpg, .jpeg, .png, .pdf" multiple>
                     </div>
                 </div>
                 <br>
@@ -135,12 +162,13 @@
         <br>
             <div class="mb-3">
                 <center>
-                    <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Añadir Bitacora</a>
+                    <a style="background-color:  #ab0033; color: white;" href="#" class="btn">Registrar petición</a>
                 </center>
             </div>
     </form>
     <br>
         <div class="container">
+            <!--
             <a class="btn" style="background-color: #ab0033; color: white;" href="registro-ciudadano.html" role="button">Registrar Ciudadano</a>
             <br><br>
             <h2>Buscar Ciudadano</h2>
@@ -205,8 +233,9 @@
                 </tbody>
             </table>
             </div>
+            -->
             <br>
-            <h1><center>SEGUIMIENTO</h1></center>
+            <h1><center>PETICIONES DE CIUDADANOS</h1></center>
         <br>
         <nav class="navbar bg-light">
             <div class="container-fluid">
@@ -240,12 +269,31 @@
                         <td>Dependencia 1</td>
                         <td>Aprobada</td>
                         <td>
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                            <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
-                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
-                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
-                            </ul>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ab0033; color: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                      </svg>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                  </svg> Visualizar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#modificarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                  </svg> Modificar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#turnarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                  </svg> Turnar</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="catalogos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg> Eliminar</a></li>
+                                </ul>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -255,12 +303,31 @@
                         <td>Dependencia 1</td>
                         <td>En revisión</td>
                         <td>
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                            <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
-                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
-                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
-                            </ul>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ab0033; color: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                      </svg>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                  </svg> Visualizar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#modificarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                  </svg> Modificar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#turnarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                  </svg> Turnar</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="catalogos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg> Eliminar</a></li>
+                                </ul>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -270,12 +337,31 @@
                         <td>Dependencia 2</td>
                         <td>Rechazada</td>
                         <td>
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                            <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
-                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
-                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
-                            </ul>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ab0033; color: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                      </svg>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                  </svg> Visualizar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#modificarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                  </svg> Modificar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#turnarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                  </svg> Turnar</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="catalogos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg> Eliminar</a></li>
+                                </ul>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -285,19 +371,263 @@
                         <td>Dependencia 2</td>
                         <td>En revisión</td>
                         <td>
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                            <ul class="dropdown-menu">
-                                <a style="background-color:  #bc955c; color: white;" href="#" class="btn">Editar</a>
-                                <a class="btn" style="background-color: #ab0033; color: white;" href="formulario-seguimeinto-peticion.html" role="button">Seguimiento</a>
-                                <a class="btn btn-secondary" style=" color: white;" href="#" role="button">Cambiar Estatus</a>
-                            </ul>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ab0033; color: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                      </svg>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                  </svg> Visualizar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#modificarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                  </svg> Modificar</a></li>
+                                  <li><a class="dropdown-item" href="formulario-modif-dep.html" data-bs-toggle="modal" data-bs-target="#turnarpeticion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                  </svg> Turnar</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="catalogos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg> Eliminar</a></li>
+                                </ul>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         </div>
+        <br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- Modal visualizar datos peticion-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Datos de la petición</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container border">
+                <h2>Datos de la Petición</h2>
+                <div class="margenes">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">CURP</label>
+                            <input id="curp" name="curp"type="text" class="form-control" disabled>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <a style="background-color:  #ab0033; color: white; margin-top: 32px;" class="btn">Buscar ciudadano</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Clave INE</label>
+                            <input id="clave-ine" name="clave-ine" type="text" class="form-control"  disabled>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Nombres</label>
+                            <input id="nombres" name="nombres" type="text" class="form-control"  disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Apellido Paterno</label>
+                            <input id="apellido-paterno" name="apellido-paterno" type="text" class="form-control"  placeholder="" disabled>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Apellido Materno</label>
+                            <input id="apellido-materno" name="apellido-materno" type="text" class="form-control" placeholder="" disabled>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Estado</label>
+                            <input id="estado" name="estado" type="text" class="form-control" disabled>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Municipio</label>
+                            <input id="municipio" name="municipio" type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Tipo de apoyo</label>
+                            <select class="form-select" aria-label="Default select example" disabled>
+                                <option selected>Seleccionar apoyo</option>
+                                <option value="monetario">Monetario</option>
+                                <option value="especie">Especie</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Fecha de Petición</label>
+                            <input id="fecha-peticion" name="fecha-peticion" type="date" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-12">
+                            <label for="">Descripción de la Petición:</label>
+                            <textarea id="descripcion" name="descripcion" class="form-control" rows="5" cols="33" placeholder="El motivo..." disabled></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-12">
+                            <label for="" class="form-label">Archivos Adjuntos</label>
+                            <input id="archivos-peticion" name="archivos-peticion" type="file" class="form-control" accept=".jpg, .jpeg, .png, .pdf" multiple disabled>
+                        </div>
+                    </div>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal modificar datos peticion-->
+<div class="modal fade" id="modificarpeticion" tabindex="-1" aria-labelledby="modificarpeticionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modificarpeticionLabel">Modificar petición</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container border">
+                <h2>Datos de la Petición</h2>
+                <div class="margenes">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">CURP</label>
+                            <input id="curp" name="curp"type="text" class="form-control" required>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <a style="background-color:  #ab0033; color: white; margin-top: 32px;" href="#" class="btn">Buscar ciudadano</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Clave INE</label>
+                            <input id="clave-ine" name="clave-ine" type="text" class="form-control"  required>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Nombres</label>
+                            <input id="nombres" name="nombres" type="text" class="form-control"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Apellido Paterno</label>
+                            <input id="apellido-paterno" name="apellido-paterno" type="text" class="form-control"  placeholder="" required>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Apellido Materno</label>
+                            <input id="apellido-materno" name="apellido-materno" type="text" class="form-control" placeholder="" required>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Estado</label>
+                            <input id="estado" name="estado" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Municipio</label>
+                            <input id="municipio" name="municipio" type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Tipo de apoyo</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Seleccionar apoyo</option>
+                                <option value="monetario">Monetario</option>
+                                <option value="especie">Especie</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <label for="" class="form-label">Fecha de Petición</label>
+                            <input id="fecha-peticion" name="fecha-peticion" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-12">
+                            <label for="">Descripción de la Petición:</label>
+                            <textarea id="descripcion" name="descripcion" class="form-control" rows="5" cols="33">El motivo...</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5 col-md-12">
+                            <label for="" class="form-label">Archivos Adjuntos</label>
+                            <input id="archivos-peticion" name="archivos-peticion" type="file" class="form-control" accept=".jpg, .jpeg, .png, .pdf" multiple>
+                        </div>
+                    </div>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn" style="background-color:  #ab0033; color: white;">Guardar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal turnar peticion-->
+<div class="modal fade" id="turnarpeticion" tabindex="-1" aria-labelledby="turnarpeticionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="turnarpeticionLabel">Turnar petición</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="container border">
+                <h2>Seleccionar dependencia</h2>
+                <div class="margenes">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-12">
+                            <label for="" class="form-label">Dependencia</label>
+                            <select class="form-select" aria-label="Default select example" required>
+                                <option selected>Seleccione una dependencia</option>
+                                <option value="1">Dependencia 1</option>
+                                <option value="2">Dependencia 2</option>
+                                <option value="3">Dependencia 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn" style="background-color:  #ab0033; color: white;">Guardar</button>
+        </div>
+      </div>
+    </div>
+</div>
