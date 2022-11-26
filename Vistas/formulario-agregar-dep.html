@@ -86,51 +86,46 @@
             <h2>Datos de la Dependencia</h2>
             <div class="margenes">
                 <div class="row">
-                <div class="col-sm-5 col-md-4">
-                    <label for="validationDefault01">Nombre Dependencia</label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="Dependencia..." required>
-                </div>
-                <div class="col-sm-5 offset-sm-2 col-md-8 offset-md-0">
-                    <label for="validationDefault03">Dirección</label>
-                    <input type="text" class="form-control" id="validationDefault02" placeholder="Ciudad, Calle, etc..." required>
-                </div>
+                    <div class="col-sm-5 col-md-4">
+                        <label for="validationDefault01">Nombre Dependencia</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Dependencia..." required>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        <label for="validationDefault01">Estado</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        <label for="validationDefault01">Municipio</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-sm-5 col-md-4">
-                        <label for="validationDefault01">Nombre Administrador</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="Nombre..." required>
+                    <div class="col-sm-5 col-md-3">
+                        <label for="" class="form-label">Apellido Paterno administrador</label>
+                        <input id="apellido-paterno" name="apellido-paterno" type="text" class="form-control"  placeholder="" required>
                     </div>
-                    <div class="col-sm-5 col-md-4">
-                        <label for="validationDefault01">Apellidos Administrador</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="Apellidos.." required>
+                    <div class="col-sm-5 col-md-3">
+                        <label for="" class="form-label">Apellido Materno administrador</label>
+                        <input id="apellido-materno" name="apellido-materno" type="text" class="form-control" placeholder="" required>
                     </div>
-                    <div class="col-sm-5 col-md-4">
+                    <div class="col-sm-5 col-md-6">
+                        <label for="" class="form-label">Nombres administrador</label>
+                        <input id="nombres" name="nombres" type="text" class="form-control"  required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-5 col-md-6">
                         <label for="validationDefault01">Correo electrónico de contacto</label>
                         <input type="email" class="form-control" id="validationDefault04" placeholder="Correo electrónico@email.com..." required>
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-sm-5 col-md-4">
-                        <label for="nomapoyo">Tipo de apoyo</label>
-                        <br>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                            Económico
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                            <label class="form-check-label" for="defaultCheck2">
-                            Especie
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 offset-sm-2 col-md-8 offset-md-0">
+                    <div class="col-sm-5 offset-sm-2 col-md-12 offset-md-0">
                         <label for="exampleFormControlTextarea1">Descripcion de dependencia</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                     </div>
                 </div>
                 <br>
